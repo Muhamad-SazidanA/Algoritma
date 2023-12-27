@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6 Soal</title>
+</head>
+<body>
+    <script>
+        //Nomer 1 PPDB
+
+         let Jalur = "Prestasi";
+         let NilaiUn = 90;
+         
+         if(NilaiUn >= 90 && NilaiUn <= 100){
+            console.log ("Nilai Sempurna Lolos");
+         }
+         else if (NilaiUn >= 75 && NilaiUn <= 90){
+                if (Jalur == "Raport"){
+                    console.log("Anda Lulus Jalur Raport");
+                }
+                else if (Jalur == "Prestasi"){
+                    console.log("Anda Lulus Jalur Prestasi");
+                }
+            }
+         else {
+            console.log("Silakan Ikut Tes Mandiri");
+         }
+
+         //Nomer 2 Bilangan Ganjil Genap Positif Negatif
+
+         let angka = 9;
+
+         if (angka >= 0){
+            console.log ("Positif");
+
+            if (angka % 2 == 0){
+                console.log("Genap");
+            }
+
+            else {
+                console.log("Ganjil");
+            }
+         }
+
+         else {
+            console.log ("Negatif");
+
+            if (angka % 2 == 0){
+                console.log("Genap");
+            }
+
+            else {
+                console.log("Ganjil");
+            }
+         }
+         
+
+        //Nomer 3 Lampu
+
+        let lampu = 1
+
+        if (lampu >= 1){
+            console.log("on")
+        }
+
+        else {
+            console.log("Off")
+        }
+
+        //Nomer 4 Diskon
+
+        let garpu = 9000
+        let sendok = 45000
+        let piring = 1000000
+        let Total = garpu + sendok + piring
+
+        if (Total > 100000){
+            let PotongHar = Total - (Total * (10/100))
+            console.log (`Total Harga Adalah Rp. ${Total}`)
+            console.log (`Karena total Belanja Lebih Dari 100000, Maka Anda Mendapatkan Potongan Harga 10%`)
+            console.log (`Sehingga Total Harga Setelah Mendapatkan Potongan Harga Adalah Rp. ${PotongHar}`)
+        }else {
+            console.log (`Total Harga Adalah Rp. ${Total}`)
+            console.log (`Maaf ANda Tidak Mendapatkan Diskon`)
+        }
+
+        //Nomer 5 Kalkulator
+
+        let jam=7
+
+        if(jam<6){
+            console.log (`100000`)
+        }
+        else if(jam==6){
+            console.log (`200000`)
+        }
+        else if(jam>6){
+            console.log (`300000`)
+        }
+        else {
+        console.log(`0`)
+        }
+
+        //Nomer 6 Pintu Air
+
+        let TinggiAir = 500  ;
+        let Status ;
+
+        if (TinggiAir <= 500 ) {
+            Status = "Status Aman";
+        } else if (TinggiAir <= 500 ) {
+            Status = "Status Waspada";
+        } else if (TinggiAir <= 600 ) {
+            Status = "Status Siaga 2";
+        } else if (TinggiAir > 650 ) {
+            Status = "Status Siaga 1";
+        } else {
+            Status = "Status Aman";
+        }
+
+        console.log(TinggiAir)
+        console.log(Status)
+
+    </script>
+    
+
+</body>
+</html>
